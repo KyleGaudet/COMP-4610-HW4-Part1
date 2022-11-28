@@ -1,0 +1,63 @@
+<!--
+File: index.html
+GUI Assignment: HW5
+Created on: 11/27/2022
+Description: Contains html for dynamic multiplication table 
+Kyle Gaudet, UMass Lowell Computer Science, kyle_gaudet@student.uml.edu
+Copyright (c) 2022 by Kyle Gaudet. All rights reserved.
+Updated by KG on 11/28/2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Multiplication Table</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Dynamic Multiplication Table</h1>
+  <div id="content">
+    <!-- form for table values and submit button -->
+    <form id = "inputForm" name = "inputForm">
+        <label id="minXlabel" for="minX">Minimum X value (between -50 and 50)</label>
+        <br>
+        <div>
+        <input type="text" id="minX" name="minX">
+        </div>
+        <br><br>
+
+        <label id="maxXlabel" for="maxX">Maximum X value (between -50 and 50)</label>
+        <br>
+        <div>
+        <input type="text" id="maxX" name="maxX">
+        </div>
+        <br><br>
+
+        <label id="minYlabel" for="minY">Minimum Y value (between -50 and 50)</label>
+        <br>
+        <div>
+        <input type="text" id="minY" name="minY">
+        </div>
+        <br><br>
+
+        <label id="maxYlabel" for="maxY">Maximum Y value (between -50 and 50)</label>
+        <br>
+        <div>
+        <input type="text" id="maxY" name="maxY">
+        </div>
+        <br><br>
+        <input type="button" id="inputButton" value="Submit"/>
+    </form>
+    <!-- div to contain table once it is added with javascript-->
+    <div id="tablediv">
+    </div>
+  </div>
+
+  <!-- javascript files for latest version of jquery and jquery validation -->
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/jquery.validate.js"></script>
+  <!-- javascript file for table and general site functionality -->
+  <script src="js/table.js"></script>
+</body>
+</html>
